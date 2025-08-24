@@ -44,6 +44,8 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
+      working-directory: ./go-web-app-main   # adjust this to your Go source folder
+
   
   push:
     runs-on: ubuntu-latest
