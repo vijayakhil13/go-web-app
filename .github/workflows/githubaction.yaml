@@ -26,12 +26,12 @@ jobs:
         go-version: 1.22
 
     - name: Build
-      working-directory: ./go-web-app-main/go-web-app-main
+      working-directory: ./go-web-app-main
       run: go build -o go-web-app
 
 
     - name: Test
-      working-directory: ./go-web-app-main/go-web-app-main
+      working-directory: ./go-web-app-main
       run: go test ./...
   
   code-quality:
@@ -45,7 +45,7 @@ jobs:
       uses: golangci/golangci-lint-action@v8
       with:
         version: latest  # specify desired golangci-lint version
-        working-directory: ./go-web-app-main/go-web-app-main
+        working-directory: ./go-web-app-main
 
   
   push:
