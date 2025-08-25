@@ -31,6 +31,7 @@ jobs:
 
 
     - name: Test
+      working-directory: ./go-web-app-main/go-web-app-main
       run: go test ./...
   
   code-quality:
