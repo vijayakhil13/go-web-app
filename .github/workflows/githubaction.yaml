@@ -7,9 +7,10 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'go-web-app/k8/**'
-      - 'Dockerfile'
+    paths-ignore:
+      - 'helm/**'
+      - 'k8s/**'
+      - 'README.md'
 
 jobs:
 
