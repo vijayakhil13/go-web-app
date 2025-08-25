@@ -71,7 +71,7 @@ jobs:
         push: true
         tags: vineethvinni/go-web-app:${{ github.run_id }}
 
-  update-newtag-in-helm-chart:
+  update-newtag-in-deploymentfile:
     runs-on: ubuntu-latest
 
     needs: push
