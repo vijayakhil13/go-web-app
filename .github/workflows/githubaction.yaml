@@ -84,7 +84,7 @@ jobs:
 
     - name: Update tag in Helm chart
       run: |
-        sed -i 's#image: vineethvinni/go-web-app:.*#image: vineethvinni/go-web-app:${{github.run_id}}#' go-web-app/k8/deployment.yaml
+        sed -i.bak 's#image: vineethvinni/go-web-app:.*#image: vineethvinni/go-web-app:${{github.run_id}}#' go-web-app/k8/deployment.yaml
 
 
     - name: Commit and push changes
