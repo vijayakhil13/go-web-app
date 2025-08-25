@@ -45,7 +45,7 @@ jobs:
       uses: golangci/golangci-lint-action@v8
       with:
         version: v2.14.5  # specify desired golangci-lint version
-        working-directory: ./go-web-app-main
+        working-directory: ./go-web-app-main/go-web-app-main
 
   
   push:
