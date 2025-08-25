@@ -42,7 +42,7 @@ jobs:
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v8
       with:
-        version: v1.56.2  # specify desired golangci-lint version
+        version: v2.1.0  # specify desired golangci-lint version
 
   
   push:
