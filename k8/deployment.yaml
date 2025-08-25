@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: vineethvinni/go-web-app:17212651838
+        image: vineethvinni/go-web-app:17212685798
         ports:
         - containerPort: 8080
 
